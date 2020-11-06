@@ -1,0 +1,346 @@
+/* 底图控制器 */
+#mapDiv .basemap-toggle {
+    position: absolute;
+}
+
+/* 底图控制项 */
+#mapDiv .basemap-toggle > .basemap {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #f0f0f0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#mapDiv .basemap-toggle > .basemap:hover {
+    background-color: #d0d0d0;
+}
+
+#mapDiv .basemap-toggle > .basemap > img {
+    border: 0;
+    outline: 0;
+    display: block;
+}
+
+#mapDiv .basemap-toggle > .basemap > span {
+    font-size: 10px;
+    display: block;
+}
+
+/* 底图控制项（选中时） */
+#mapDiv .basemap-toggle > .basemap[selected],
+#mapDiv .basemap-toggle > .basemap[selected]:hover {
+    background-color: #fff;
+    display: block;
+}
+
+/* 图例控制器 */
+#mapDiv .legend {
+    position: absolute;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    background-color: #fff;
+    color: #555;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.75);
+    padding: 8px;
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+    border: 1px solid #f0f0f0;
+}
+
+#mapDiv .legend > .title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#mapDiv .legend > .list {
+    width: 200px;
+    padding: 8px 0 0 0;
+    margin: 0;
+    overflow: visible;
+    list-style: none;
+}
+
+#mapDiv .legend > .list > .legend-item {
+    padding: 0 8px;
+    border-bottom: 1px solid #f0f0f0;
+    height: 26px;
+    line-height: 26px;
+}
+
+#mapDiv .legend > .list > .legend-item:hover {
+    background-color: #d0d0d0;
+    color: #555;
+    font-weight: bold;
+}
+
+#mapDiv .legend > .list > .legend-item:last-child {
+    border-bottom: 0;
+}
+
+#mapDiv .legend > .list > .legend-item > * {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+}
+
+#mapDiv .legend > .list > .legend-item > *:first-child {
+    width: 24px;
+    height: 6px;
+    margin: 0 8px;
+}
+
+#mapDiv .legend > .list > .legend-item > .bg-status-1 {
+    width: 18px;
+    height: 9px;
+    -webkit-border-radius: 0 0 9px 9px;
+    -moz-border-radius: 0 0 9px 9px;
+    border-radius: 0 0 9px 9px;
+    margin: 8px 11px 0 11px;
+}
+
+#mapDiv .legend > .list > .legend-item > .bg-status-1 > span {
+    display: inline-block;
+    position: absolute;
+    width: 16px;
+    height: 8px;
+    -webkit-border-radius: 8px 8px 0 0;
+    -moz-border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px 0 0;
+    border: 1px solid #555;
+    border-bottom: 0;
+    margin-top: -8px;
+}
+
+#mapDiv .toolbox-draw-river {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #f0f0f0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#mapDiv .toolbox-draw-river > img {
+    border: 0;
+    outline: 0;
+    display: block;
+}
+
+#mapDiv .toolbox-draw-river:hover,
+#mapDiv .toolbox-draw-river[selected='selected'] {
+    background-color: #d0d0d0;
+}
+
+.draw-toolbar-content-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 48px;
+    overflow: hidden;
+}
+
+.draw-toolbar-content-list > * {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    border-right: 1px solid #e0e0e0;
+}
+
+.draw-toolbar-content-list > *:last-child {
+    border-right: 0;
+}
+
+.draw-toolbar-content-list > *:hover {
+    background-color: #d0d0d0;
+    font-weight: bold;
+    color: #555;
+}
+
+.draw-toolbar-content-list > li > img {
+    width: 24px;
+    height: 24px;
+    vertical-align: top;
+    margin-top: 4px;
+}
+
+.draw-toolbar-content-list > li > span {
+    display: block;
+}
+
+.draw-feature-content-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 230px;
+    max-height: 80%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.draw-feature-content-list > * {
+    padding: 4px 16px;
+    height: 32px;
+    line-height: 32px;
+    vertical-align: middle;
+    border-right: 1px solid #e0e0e0;
+    overflow: hidden;
+}
+
+.draw-feature-content-list > *:hover,
+.draw-feature-content-list > *:hover > input {
+    background-color: #f0f0f0;
+}
+
+.draw-feature-content-list > *:last-child {
+    border-right: 0;
+}
+
+.draw-feature-content-list > li > * {
+    float: left;
+    margin: 4px 4px 0 4px;
+}
+
+.draw-feature-content-list > li > *:first-child {
+    margin-left: 0;
+}
+
+.draw-feature-content-list > li > *:last-child {
+    margin-right: 0;
+}
+
+.draw-feature-content-list > li > .btn {
+    float: right;
+}
+
+.draw-feature-content-list > li > img:first-child {
+    width: 24px;
+    height: 24px;
+}
+
+.draw-feature-content-list > li > input {
+    width: 100px;
+    height: 24px;
+    outline-width: 0;
+    border: 0;
+    border-bottom: 1px solid #e0e0e0;
+    margin-top: 1px;
+}
+
+.draw-feature-content-list > li > input:hover {
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.draw-feature-content-list > li > input:focus {
+    border-bottom: 1px solid #555;
+}
+
+.draw-feature-content-list > li > .btn {
+    width: 24px;
+    height: 24px;
+    text-align: center;
+}
+
+.draw-feature-content-list > li > .btn:hover {
+    background-color: #d0d0d0;
+}
+
+.draw-feature-content-list > li > .btn > img {
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+}
+.list > .legend-item {
+    padding: 0 8px;
+    border-bottom: 1px solid #f0f0f0;
+    height: 26px;
+    line-height: 26px;
+}
+.legend-item-box{
+    display: inline-block;
+}
+#mapDiv .alone-legend{
+    position: static;
+    width: auto;
+    background:transparent;
+    border: none;
+    padding: 0;
+    box-shadow:none;
+}
+#mapDiv .alone-legend > .list{
+  width: auto;
+}
+#mapDiv .alone-legend > .list > .legend-item{
+    display: initial;
+    padding: 0;
+    color: white;
+    border-bottom: none;
+}
+#mapDiv .alone-legend > .list > .legend-item:hover{
+    background: transparent;
+    color: white;
+}
+#mapDiv .alone-legend > .list > .legend-item > .bg-status-1 > span{
+    width: 18px;
+    border: 1px solid #fdf8f8;
+}
+@media (max-width: 1024px){
+ #aloneLegend{
+     width: 170px;
+     right: auto;
+     left: 0;
+     padding: 0!important;
+     bottom: 26px!important;
+ }
+    #mapDiv .basemap-toggle{
+
+    }
+    #mapDiv .legend > .list{
+        padding: 0;
+    }
+
+
+}
+
+
+

@@ -1,0 +1,23 @@
+[
+  {
+    "children":[
+      {
+        "num":1,
+        "name":"公共代码",
+        "icon":"icon-2012081511767",
+        "remark":"公共代码",
+        "id":"6789406a-7808-4a48-fxy2-5d5a3fa00da7",
+        "text":"公共代码",
+        "state":"",
+        "parentId":"345664ba-837d-fxy0-8a1f-98c9d90d09d3",
+        "url":"/enviromonit/commonCode"
+      }
+    ],
+    "name":"资源管理",
+    "id":"0",
+    "text":"资源管理",
+    "url":"#",
+    "state":"",
+    "parentId":""
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "properties": [
+    {
+      "name": "ams.log.operate.open",
+      "type": "java.lang.String",
+      "description": "自定义操作日志开关."
+    }
+  ]
+}

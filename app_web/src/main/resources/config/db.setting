@@ -1,0 +1,30 @@
+# 正式环境数据库IP 10.155.77.23:1433
+[epa]
+url = jdbc:sqlserver://10.155.77.23:1433;DatabaseName=ZZEpa
+username = sa
+password = sa
+
+[Pollution]
+url = jdbc:sqlserver://10.155.77.23:1433;DatabaseName=ZZPollution
+username = sa
+password = sa
+
+[ZZProblemProcessing]
+url = jdbc:sqlserver://10.155.77.23:1433;DatabaseName=ZZProblemProcessing
+username = sa
+password = sa
+
+[ProblemProcessing]
+url = jdbc:sqlserver://10.155.77.23:1433;DatabaseName=ZZProblemProcessing
+username = sa
+password = sa
+
+[ZZRegulatoryWarning]
+url = jdbc:sqlserver://10.155.77.23:1433;DatabaseName=ZZRegulatoryWarning
+username = sa
+password = sa
+
+[ZZEnvironmentalMessage]
+url = jdbc:sqlserver://10.155.77.23:1433;DatabaseName=ZZEnvironmentalMessage
+username = sa
+password = sa

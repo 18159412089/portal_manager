@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>漳州环保资源中心-即时通讯</title>
+	<link rel="stylesheet" href="css/base.css"/>
+	<link rel="stylesheet" href="css/animate.css"/>
+	<link rel="stylesheet" href="css/index.css?v=1"/>
+	<link rel="icon" href="images/icon.ico" type="image/x-icon"/>
+</head>
+<body style="width: 100%;height: 100%;overflow:hidden;">
+	<div class="login-bg" id="video">	
+		<video loop="loop" muted="muted" preload="auto" poster="images/login_bg.jpg" style="top: 0;left: 0;width: 100%;height: 100%;opacity: 1;object-fit: cover;" autoplay="autoplay">
+			<source src="images/login_bg.mp4" type="video/mp4">
+			<source src="images/login_bg.webm" type="video/webm">
+			<source src="images/login_bg.ogg" type="video/ogg">
+			<object data="images/login_bg.mp4" width="100%" height="100%">
+				<embed src="images/login_bg.swf" width="100%" height="100%">
+			</object>
+		</video>
+	
+	</div>
+	<div class="bad-network hide tc radius5px" id="j-errorNetwork">已与服务器断开，请检查网络连接</div>
+	<div class="wrapper radius10px" id="j-wrapper">
+		<div class="row tc">
+			<a href="main.html">
+				<button type="button" class="btn btn-login" id="j-loginBtn">IM即时通讯DEMO</button>
+			</a>
+		</div>
+		<div class="row tc">
+			<a href="chatroom/list.html">
+				<button type="button" class="btn btn-login" id="j-loginBtn">聊天室DEMO</button>
+			</a>
+		</div>
+	</div>
+	<div id="footer" class="footer tc">
+		<p class="hide">为了更好地体验本系统，建议您使用Edge、Chrome、FireFox、Safari、360等主流浏览器。</p>
+		<p>&copy;1997 - 2018 漳州市环保局</p>
+	</div>
+</body>
+<script type="text/javascript">
+	if(IEVersion()>=6){
+	 	var videoHeight=document.body.clientWidth*1080/1920;
+		var videoTop=document.body.clientHeight-videoHeight;
+		document.getElementById("video").style.top=videoTop+"px";
+	 }
+	function IEVersion() {
+        var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串  
+        var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1; //判断是否IE<11浏览器  
+        var isEdge = userAgent.indexOf("Edge") > -1 && !isIE; //判断是否IE的Edge浏览器  
+        var isIE11 = userAgent.indexOf('Trident') > -1 && userAgent.indexOf("rv:11.0") > -1;
+        if(isIE) {
+            var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
+            reIE.test(userAgent);
+            var fIEVersion = parseFloat(RegExp["$1"]);
+            if(fIEVersion == 7) {
+                return 7;
+            } else if(fIEVersion == 8) {
+                return 8;
+            } else if(fIEVersion == 9) {
+                return 9;
+            } else if(fIEVersion == 10) {
+                return 10;
+            } else {
+                return 6;//IE版本<=7
+            }   
+        } else if(isEdge) {
+            return 'edge';//edge
+        } else if(isIE11) {
+            return 11; //IE11  
+        }else{
+            return -1;//不是ie浏览器
+        }
+    }
+</script>
+</html>

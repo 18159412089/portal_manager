@@ -1,0 +1,120 @@
+.webuploader-container {
+	position: relative;
+	display: inline-block;
+}
+.webuploader-element-invisible {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px,1px,1px,1px);
+}
+/* .webuploader-pick {
+ 	position: relative; 
+	display: inline-block;
+	cursor: pointer;
+	background: #248BEA;
+ 	padding: 5px 15px; 
+	color: #fff;
+	text-align: center;
+	border-radius: 3px;
+	overflow: hidden;
+} *//*
+ .webuploader-pick-hover {
+	background: #00a2d4;
+} */
+
+.webuploader-pick-disable {
+	opacity: 0.6;
+	pointer-events:none;
+}
+
+.multiple-file-container{width:100%;height:auto;}
+.multiple-file-container .multiple-title{
+	border-left:5px solid #248BEA;
+	margin:10px 0 20px 0;
+	font-size:18px;
+	font-weight:bold;
+}
+.multiple-file-container .multiple-title h3{margin-left:10px;}
+.multiple-file-container .table{
+	border:1px solid #e6e6e6;
+	width:100%; 
+	font-family: Tahoma,Verdana,΢���ź�,������,serif;
+	text-align:left; 
+}
+.multiple-file-container .table th{
+	border:1px solid #e6e6e6;
+	background:#fdfafa;
+	padding:10px;
+	font-size:13px;
+	font-weight:bold;
+}
+.multiple-file-container .table td{
+	border:1px solid #e6e6e6;
+	padding:10px;
+	font-size:13px;
+}
+.multiple-content{margin-left:20px;}
+.wu-example .btns .easyui-linkbutton{
+	border: none;
+	background: #248BEA;
+	height: 35px;
+	padding: 0 15px;
+	color: #fff;
+	box-sizing: border-box;
+}
+.wu-example .btns .easyui-linkbutton:hover{
+	background:#00a2d4;
+}
+.btns{margin-bottom:20px;}
+.upload-progress .outer-line{
+	 
+	height:18px; 
+	border:1px solid #248bea;
+}
+.upload-progress .outer-line .inner-border{
+	height: 100%;
+	background: #248bea;
+	border: 1px solid #fff;
+	box-sizing: border-box;
+}
+.operation-btn .btn{
+	padding: 8px 15px;
+	border-radius: 3px;
+	color: #fff;
+	margin-right:8px;
+	cursor: pointer;
+	display:inline-block;
+}
+.operation-btn .btn-danger{background: #f6483f;}
+.operation-btn .btn-warning{background:#fe931f;}
+.file-img-inner{
+	width:60px;
+	height:60px;
+	border:1px solid #d6d6d6;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+.file-img-inner img{
+	magrin:0 auto;
+	width:56px;
+}
+.btns .show-hidden{
+	display:none;
+}
+
+.yl-article-area{
+	position: relative;
+}
+
+.yl-article-area .details-link{
+	display: inline-block;
+	position: absolute;
+	right: 20%;
+	top: 0;
+}
+.yl-container{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}

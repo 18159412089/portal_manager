@@ -1,0 +1,15 @@
+eclipse.preferences.version=1
+encoding//src/main/java=UTF-8
+encoding//src/main/resources=UTF-8
+encoding//src/main/resources/application-dev.properties=UTF-8
+encoding//src/main/resources/application-prod.properties=UTF-8
+encoding//src/main/resources/application-test.properties=UTF-8
+encoding//src/main/resources/application.properties=UTF-8
+encoding//src/main/resources/config/dbsql.properties=UTF-8
+encoding//src/main/resources/log4j.properties=UTF-8
+encoding//src/main/resources/security_message_zh_CN.properties=UTF-8
+encoding//src/main/resources/templates/moudles/enviromonit/water/nationalSurfaceWater.ftl=UTF-8
+encoding//src/main/resources/templates/supervisionMenu.ftl=UTF-8
+encoding//src/test/java=UTF-8
+encoding//src/test/resources=UTF-8
+encoding/<project>=UTF-8

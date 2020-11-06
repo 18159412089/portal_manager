@@ -1,0 +1,11 @@
+# 正式环境数据库IP 10.155.77.23:1433
+
+[sso]
+url = jdbc:mysql://10.155.77.23:3306/zz-sso-server?characterEncoding=utf8&useSSL=true
+username = root
+password = root
+
+[ZZEnvironmentalMessage]
+url = jdbc:sqlserver://10.155.77.23:1433;DatabaseName=ZZEnvironmentalMessage
+username = sa
+password = sa

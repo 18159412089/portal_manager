@@ -1,0 +1,336 @@
+/* img{width:100%;height:auto;} */
+
+.map-links-container{}
+.map-links-container .item{display: block;width: 40px;margin:2px 0;padding: 20px 10px;background:#fff;background-color:rgba(255,255,255,0.8);cursor:pointer;
+	color:#333;text-decoration:none;text-align:center;line-height:1.1;
+	-webkit-border-radius:0 3px 3px 0;-moz-border-radius:0 3px 3px 0;border-radius:0 3px 3px 0;
+	-webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+.map-links-container .item:hover
+,.map-links-container .item.active{background-color:#1087f2;background-color:rgba(16,135,242,0.8);color:#fff;}
+/**/
+.map-legend-container{padding: 8px 0px 8px 20px;background-color:#041825;background-color:rgba(0,0,0,0.5);}
+.map-legend-container .item{width:60px;float:left;text-align: center;line-height:2.6;font-size: 12px;}
+.map-legend-container .grade-legend .legend{width: 240px;text-align: left;line-height: 1.6;}
+.map-legend-container .grade-legend .legend .item{float:none;}
+.map-legend-container .title{overflow: hidden;}
+.map-legend-container .grade-legend{overflow: hidden;}
+.map-legend-container .grade-legend .item{height:10px;}
+.map-legend-container .num{overflow: hidden;margin-left: -30px;}
+/**/
+.map-filter-container{}
+.group-btn .btn-filter{display:inline-block;padding:8px 16px;background-color:#ffffff;color:#333333;
+	-webkit-border-radius:50px;-moz-border-radius:50px;border-radius:50px;cursor:pointer;
+}
+.group-btn .btn-filter.active{background-color:#1087f2;color:#ffffff;}
+.btn-filter .textbox{border: none;margin:0;box-shadow:none;}
+/**/
+.map-panel{}
+.map-panel-header{
+	display: block;width: 40px;padding: 12px 10px;position:absolute;right:-40px;left:auto;top:0;cursor:pointer;
+	background-color:#1087f2;background-color:rgba(16,135,242,0.8);color:#fff;text-align:center;line-height:1.1;
+	-webkit-border-radius:0 3px 3px 0;-moz-border-radius:0 3px 3px 0;border-radius:0 3px 3px 0;
+	-webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+.map-panel-subtext{padding: 12px 10px;background-color:#1087f2;background-color:rgba(16,135,242,0.8);
+	text-align:right;
+	-webkit-border-radius:0px 0px 3px 3px;-moz-border-radius:0px 0px 3px 3px;border-radius:0px 0px 3px 3px;
+
+}
+.map-panel-subtext .subtext{color:#98b7e0;font-size:12px;}
+.map-panel-subtext .info{text-align:left;}
+.map-panel-body .map-panel-subtext .textbox{background-color:#fff;}
+.map-panel-body .map-panel-subtext .textbox .textbox-text
+,.map-panel-body .map-panel-subtext .combo .combo-arrow{color:#333;}
+.map-panel-body .column-group .top {margin:0px;}
+.map-panel-body .map-panel-subtext .btn-blue {
+    background: #65b149;
+    border-color: #65b149;
+    color: #fff;
+}
+.map-panel-subtext .column-group .top .title{color:#fff;}
+.map-panel-subtext .column-group .top .title .icon{color:#fff;float:none;top: 1px;}
+.map-panel-header .title{display:block;font-size:16px;}
+.map-panel-header .title .icon{font-size:inherit;margin-bottom:6px;}
+.map-panel-header .title:after{content:"";display:block;clear:both;}
+.map-panel-body{
+	-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;
+	background-color: #041825;background-color: rgba(0,0,0,0.5);overflow:hidden;
+	-moz-transition:width .5s,height .5s;-ms-transition:width .5s,height .5s;-o-transition:width .5s,height .5s;-webkit-transition:width .5s,height .5s;transition:width .5s,height .5s;
+}
+.map-panel.panel-left .map-panel-header{left:-40px;right:auto;
+	-webkit-border-radius:3px 0px 0px 3px;-moz-border-radius:3px 0px 0px 3px;border-radius:3px 0px 0px 3px;	
+}
+.map-panel.panel-left .title .icon-zhedie3:before {content: "\e772";}
+.map-panel.collapsed.panel-left .title .icon-zhedie3:before {content: "\e774";}
+.map-panel.panel-top .map-panel-header{position: static;width:auto;text-align:left;
+	-webkit-border-radius:3px 3px 0px 0px;-moz-border-radius:3px 3px 0px 0px;border-radius:3px 3px 0px 0px;
+}
+.map-panel.panel-top .title .icon{margin-bottom: 0;float:right;}
+.map-panel.panel-top .map-panel-body{-webkit-border-radius:0px 0px 3px 3px;-moz-border-radius:0px 0px 3px 3px;border-radius:0px 0px 3px 3px;}
+.map-panel.panel-top .title .icon-zhedie3:before {content: "\e773";}
+.map-panel.collapsed.panel-top .title .icon-zhedie3:before {content: "\e775";}
+.map-panel .map-panel-body .body-box{background-color:#222631;}
+
+.map-panel.collapsed .map-panel-body{width:0px!important;}
+.map-panel.collapsed .title .icon-zhedie3:before{content:"\e772";}
+.map-panel.panel-top.collapsed .map-panel-body{width:auto!important;height:0px!important;}
+/*panel tabs*/
+.map-panel .tabs-panel{position:absolute;right: 100%;}
+.map-panel .tabs-content{position:absolute;left:0px;right: 0;top:220px;bottom:0px;}
+.map-panel .tabs-content > .body-box{height: 100%;}
+.tabs-panel{}
+.tabs-panel .tabs-item{margin-bottom: 3px;width: 80px;}
+.tabs-panel .tabs-item .tabs-inner{background: #222631;color:#fff;text-decoration: none;cursor:pointer;
+	padding: 6px 10px;display: block;-webkit-border-radius: 3px 0px 0px 3px; -moz-border-radius: 3px 0px 0px 3px; border-radius: 3px 0px 0px 3px;
+}
+.tabs-panel .tabs-item .tabs-inner.active{background:#1286d3;font-weight: bold;}
+
+
+
+
+
+/*单选*/
+.radio-button-group.chart-radio{text-align:center;padding-top:20px;}
+.radio-button-group.chart-radio span{color: #ffffff;}
+.radio-button-group span {
+  display: inline-block;
+  padding: 0px 10px;
+  cursor: pointer;
+  color:#2f8ffd;
+}
+.radio-button-group span.active {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #2f8ffd;
+  color: #ffffff;
+}
+.radio-button-group.style-list{position:relative;}
+.radio-button-group.style-list span{display:block;padding: 6px 10px;color:#fff;
+	border-top:1px solid #434650;border-color:rgba(255,255,255,0.15);
+}
+.radio-button-group.style-list span:first-child{border-top:none;}
+.radio-button-group.style-list span.active{background:none;color: #2f8ffd;}
+.radio-button-group .mCSB_container{margin-right: 0px;}
+.data-analysis {height:100%;}
+.data-analysis .data-analysis-content{height:100%;position:relative;padding:12px;}
+.data-analysis > .radio-button-group{border-right:1px solid #434650;border-color:rgba(255,255,255,0.15);}
+.selectBox-container{position:relative;height:30px;}
+.selectBox-container .select-button{display:inline-block;cursor: pointer;}
+.selectBox-container .select-button span:after{
+	content:"\e76f";display:inline-block;font-family: "iconcustom" !important;
+}
+.selectBox-container .select-panel{display:none;
+	background:#1e222c;height:140px;position: absolute;bottom:0px;left: 0px;right: 0px;
+}
+.selectBox-container .select-panel.show{display:block;}
+.selectBox-container .select-panel .form-checkbox{width:125px;padding:6px 8px;vertical-align: top;}
+.selectBox-container .select-panel .l-btn{line-height:23px;height:24px;margin: 3px 20px;}
+.select-panel input[type="checkbox"] + .lbl:before
+, .select-panel input[type="radio"] + .lbl:before{
+	width: 14px;height: 14px;background:#e7e7e6;border-color:#e7e7e6;color: #2f8ffd;
+}
+
+
+/*-----------------*/
+.AQI-info-box{height:153px;padding:12px;
+	background-color:#1087f2;background-color:rgba(16,135,242,0.8);color:#fff;	
+}
+.AQI-info-box .title{font-size:16px;}
+.AQI-info-box .data{font-size:18px;line-height: 1.1;}
+.AQI-info-box .data .num{font-size:48px;}
+.AQI-info-box .text{line-height: 1.4;}
+
+.AQI-info-list{overflow: hidden;position: absolute;top:153px;bottom: 0;left: 0;right: 0;background-color:#222631;}
+.AQI-info-list .item{float:left;width: 50%;border-bottom: 1px dashed #fff;padding:12px;}
+.AQI-ranking-list .item{border-bottom: 1px dashed #fff;padding:12px;text-align:center;}
+.AQI-ranking-list div.item{border-style:solid;}
+.AQI-ranking-list .item:last-child{border-bottom:none;}
+.AQI-ranking-list .ranking{float:left;width:64px;}
+.AQI-ranking-list .ranking span{display:inline-block;background:#65b149;width:22px;
+	-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;
+}
+.AQI-ranking-list .title{text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+.AQI-ranking-list .data{float:right;width:72px;}
+
+/*-----------*/
+.panel-group-container{background-color:#222631;position:relative;}
+.panel-group-container .panel-group-box{border-bottom:1px solid #434650;border-color:rgba(255,255,255,0.15);
+	padding: 12px;
+}
+.panel-group-box .panel-group-top{color:#ff5400;}
+.panel-group-box .panel-group-top .subtext{color:#98b7e0;font-size:12px;}
+
+.panel-group-container .panel-body{background:none;}
+.panel-group-container .datagrid .datagrid-wrap .datagrid-toolbar{background:none;}
+.panel-group-container .panel-body .datagrid-pager{background:none;border-left:none;border-right:none;}
+.panel-group-container .panel-body .datagrid-cell-rownumber
+,.panel-group-container .panel-body .datagrid-cell{color:#fff;}
+.panel-group-container .panel-body .datagrid-row-over
+,.panel-group-container .panel-body .datagrid-header td.datagrid-header-over{background:#2a2f3d;}
+.panel-group-container .panel-body .datagrid-header td{border:none;}
+.panel-group-container .panel-body .datagrid-header{background:none;border-color:#666971;}
+.panel-group-container .datagrid .datagrid-wrap.panel-body
+,.panel-group-container .datagrid .datagrid-wrap .datagrid-view div[class^="datagrid-view"]
+,.panel-group-container .datagrid .datagrid-wrap .datagrid-view{border:none!important;}
+.panel-group-container .datagrid-header td
+,.panel-group-container .datagrid-body td
+,.panel-group-container .datagrid-footer td{border-width: 0 0px 1px 0px;border-color: #494949;background: none;}
+.panel-group-container .datagrid-toolbar .textbox-label{width:auto;}
+
+.AQI-info{padding: 8px 30px;}
+.AQI-info span{display:inline-block;width: 30%;line-height: 2;}
+.panel-group-container > .panel-group-top{padding: 8px 16px;font-size:16px;border-bottom:1px solid #434650;border-color:rgba(255,255,255,0.15);}
+.panel-group-container > .panel-group-top .subtext{font-size:12px;}
+.panel-group-container .panel-info{font-size:0;padding: 8px 16px;}
+.panel-group-container .panel-info span{display:inline-block;width: 49%;line-height: 2;font-size:14px; }
+
+.map-panel .tabs-panels{background-color:#222631;}
+.map-panel .tabs-header{background-color:#1087f2;background-color:rgba(16,135,242,0.8);
+-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;
+}
+.map-panel .tabs{border: none;}
+.map-panel .tabs li{border: none;}
+.map-panel .tabs li a.tabs-inner{padding:0px 10px;color:#fff;border: none;}
+.map-panel .tabs li.tabs-selected a.tabs-inner
+,.map-panel .tabs li:hover a.tabs-inner{background:#222631;}
+.map-panel .tabs-tool
+,.map-panel .panel-body {
+    background:none;color:#fff;
+}
+.water-type-list{}
+.water-type-list .item{border-bottom: 1px dashed #fff;border-color:rgba(255,255,255,0.15);padding:12px;}
+.water-type-list .item >span {width:49%;display: inline-block;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+.water-type-list div.item {border-style: solid;}
+
+
+.map-panel-body .textbox{border: none;margin:0;box-shadow:none;background:none;}
+.map-panel-body .textbox .textbox-text{background:none;color:#fff;}
+.map-panel-body .datagrid-toolbar .textbox .textbox-text{background:#fff;color:#333;}
+.map-panel-body .datebox .combo-arrow{color:#fff;}
+.map-panel-body .combo .combo-arrow{font-size:12px;width: 20px !important;background:none;color:#fff;line-height: 30px;}
+.map-panel-body .combo .combo-arrow:before{content: "\e76f";font-family: "iconcustom" !important;}
+.map-panel-body .datebox .combo-arrow{font-size:20px;width: 20px !important;background:none;line-height: 30px;}
+.map-panel-body .datebox .combo-arrow:before{content: "\e644";font-family: "iconcustom" !important;}
+.map-panel-body .panel-textbox{padding:8px 0; }
+.map-panel-body .panel-textbox .textbox{margin:0 8px;}
+
+.air-AQI-container{height: 194px;}
+.air-AQI-container .air-AQI-box{width:140px;height: 100%;float:left;text-align:center;
+	background:#b8b8b8;background-color:rgba(184,184,184,0.6);color:#fff;padding-top: 60px;
+}
+.air-AQI-container .air-AQI-box span{font-size: 28px;}
+.air-AQI-container .air-AQI-box.excellent{background:#00E400;}
+.air-AQI-container .air-AQI-box.good{background:#CFCF00;}
+.air-AQI-container .air-AQI-box.mild{background:#FF7E00;}
+.air-AQI-container .air-AQI-box.moderate{background:#FF0000;}
+.air-AQI-container .air-AQI-box.severe{background:#99004C;}
+.air-AQI-container .air-AQI-box.dangerous{background:#7E0023;}
+.air-AQI-container .air-AQI-box.not_data{color:#b8b8b8!important;}
+.air-AQI-container .air-AQI-details{overflow:hidden;}
+.air-AQI-container .air-AQI-details .air-AQI-top{padding:12px;font-size:16px;}
+.air-AQI-container .air-AQI-details .air-AQI-top .time{color:#707173;}
+.air-AQI-container .air-AQI-details .AQI-info-alone{padding: 0px 12px;}
+.air-AQI-container .air-AQI-details .AQI-info{padding: 0px 12px;font-size:0px;}
+.air-AQI-container .air-AQI-details .AQI-info span{width:33.33%;font-size:14px;}
+/*日历*/
+.panel-calendar-container{background:#222631;height: 100%;}
+.panel-calendar-container .calendar-wrapper{border-top: 1px solid #fff;border-bottom: 1px solid #fff;border-color:rgba(255,255,255,0.15);
+	padding-bottom:12px;text-align:center;
+}
+.panel-calendar-container .calendar-wrapper table{width: 97%;margin: 0 auto;}
+.calendar-wrapper table{width: 100%;}
+.calendar-wrapper th{width: 14.286%;text-align:center;padding:4px 4px 0px 4px;}
+.calendar-wrapper td{text-align:center;}
+.calendar-wrapper .item{background:#b8b8b8;background-color:rgba(184,184,184,0.1);
+	margin: 4px;padding:12px 4px;color:#fff;line-height: 1.3;cursor:pointer;
+}
+.calendar-wrapper .item .date{font-size:16px;}
+.calendar-wrapper .item .other{font-size:9px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+.calendar-wrapper .item.excellent{background:#00E400;}
+.calendar-wrapper .item.good{background:#CFCF00;}
+.calendar-wrapper .item.mild{background:#FF7E00;}
+.calendar-wrapper .item.moderate{background:#FF0000;}
+.calendar-wrapper .item.severe{background:#99004C;}
+.calendar-wrapper .item.dangerous{background:#7E0023;}
+.calendar-wrapper .item.pre-m{color:#4b4d51;}
+.calendar-wrapper .item.today{background:#1087f2;}
+.calendar-wrapper .item.next-m{background:none;color:#4b4d51;}
+
+/*图层控制*/
+.filter-container .filter-box .filter-title{
+  text-align: left;
+  color:#1286d3;
+  position: relative;
+  padding-left:12px;
+  margin: 6px 12px;
+}
+.filter-container .filter-box .filter-title:before{
+  content: '';
+  display: block;
+  width:6px;
+  height: 80%;
+  background:#1286d3;
+  position: absolute;
+  top: 10%;
+  left: 0;
+}
+.filter-container .filter-box .filter-content{
+  margin: 0 12px;
+  font-size: 12px;
+}
+.filter-container .filter-box .filter-content .no-choice{
+  padding: 3px 6px;
+  border: 1px solid #949494;
+  margin:2px 0;
+  width: 23.5%;
+  box-sizing: border-box;
+  display: inline-block;
+  border-radius: 3px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+.filter-container .filter-box .filter-content .no-choice.choiced{
+  background: #E7F3FF;
+  border: 1px solid #1894F6;
+  color:#1894F6;
+}
+.filter-container .filter-box .filter-content .no-choice.choiced:after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border: 8px solid #1894F6;
+  border-left: 8px solid transparent;
+  border-top: 8px solid transparent;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.filter-container .filter-box .filter-content .no-choice.choiced:before{
+  content: 'x';
+  display: block;
+  color: #fff;
+  position: absolute;
+  right: 1px;
+  bottom: -2px;
+  z-index: 3;
+  font-size: 12px;
+}
+
+
+
+/*------------------------------------------------------响应式----------------------------------------------------------*/
+@media screen and (max-width: 1440px) {
+
+}
+
+
+
+

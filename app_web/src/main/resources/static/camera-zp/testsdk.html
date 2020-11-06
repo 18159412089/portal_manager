@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../camera-zp/css/zTreeStyle/zTreeStyle.css">
+    <link rel="stylesheet" href="css/cameraBase.css">
+    <link rel="stylesheet" href="css/preview.css">
+    <link rel="stylesheet" href="css/video.css">
+    <style>
+        .mainContent {
+            overflow: hidden;
+        }
+        .mainContent .left,
+        .mainContent .right {
+            float: left;
+            margin-bottom: -10000px;
+            padding-bottom: 10000px;
+        }
+        .mainContent .left {
+            width: 20%;
+        }
+        .mainContent .right {
+            width: 80%;
+        }
+        #fjzx-camera {
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainContent">
+        <div class="left">
+            <ul id="treeDemo" class="ztree" style="height:600px;overflow-y: scroll;"></ul>
+            <div class="control" style="text-align: center;">
+                <p>
+                    <button type="button" class="btn btn-default camera-operate-btn" style="width:80px;" action="10">左上</button>
+                    <button type="button" class="btn btn-default camera-operate-btn" style="width:80px;" action="6">上</button>
+                    <button type="button" class="btn btn-default camera-operate-btn" style="width:80px;" action="11">右上</button>
+                </p>
+                <p>
+                    <button type="button" class="btn btn-default camera-operate-btn" style="width:80px;" action="8">左</button>
+                    <button type="button" class="btn btn-default camera-operate-btn" style="width:80px;" action="">播放</button>
+                    <button type="button" class="btn btn-default camera-operate-btn" style="width:80px;" action="9">右</button>
+                </p>
+                <p>
+                    <button type="button" class="btn btn-default camera-operate-btn" style="width:80px;" action="12">左下</button>
+                    <button type="button" class="btn btn-default camera-operate-btn" style="width:80px;" action="7">上</button>
+                    <button type="button" class="btn btn-default camera-operate-btn" style="width:80px;" action="13">右下</button>
+                </p>
+                <p>
+                    <button type="button" class="btn btn-default camera-operate-btn" style="width:80px;" action="0">变倍放大</button>
+                    <button type="button" class="btn btn-default camera-operate-btn" style="width:80px;" action="1">变倍缩小</button>
+                </p>
+                <p>
+                    <button type="button" class="btn btn-default camera-operate-btn" style="width:80px;" action="2">光圈放大</button>
+                    <button type="button" class="btn btn-default camera-operate-btn" style="width:80px;" action="3">光圈缩小</button>
+                </p>
+                <p>
+                    <button type="button" class="btn btn-default camera-operate-btn" style="width:80px;" action="4">调焦-近</button>
+                    <button type="button" class="btn btn-default camera-operate-btn" style="width:80px;" action="5">调焦-远</button>
+                </p>
+                <p>
+                    <button type="button" class="btn btn-default camera-operate-btn" style="width:80px;" action="14">停止操作</button>
+                    <button type="button" class="btn btn-default camera-operate-btn" style="width:80px;" action="15">操作速度</button>
+                </p>
+                <p>
+                    <button type="button" class="btn btn-default camera-operate-btn" style="width:80px;" action="16">回到原点</button>
+                    <button type="button" class="btn btn-default camera-operate-btn" style="width:80px;" action="17">设置预置点</button>
+                    <button type="button" class="btn btn-default camera-operate-btn" style="width:80px;" action="18">调用预置点</button>
+                    <button type="button" class="btn btn-default camera-operate-btn" style="width:80px;" action="19">删除预置点</button>
+                </p>
+            </div>
+        </div>
+        <div class="right">
+            <div id='fjzx-camera'></div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../ztree/js/jquery.ztree.core.js"></script>
+<!--slplayer.js文件-->
+<script src="js/slplayer.js"></script>
+<script src='js/fjzx-camera-config.js'></script>
+<script src='js/fjzx-camera.js'></script>
+<script>
+   $(function(){
+        var camera = new fjzx.camera.Camera({
+            "playerContainer": "fjzx-camera",
+            "playerCount": 3
+        });
+        var cameraTree = new fjzx.camera.CameraTree({
+            "cameraTreeContainer":"treeDemo",
+            "onClick": function(treeNode){
+                if(treeNode.nodeType=='channel'){
+                    if(!treeNode.is_online){
+                        alert('该通道不在线');
+                        return;
+                    }
+                    var chanid = treeNode.id;
+                    var tk = cameraTree.getTk();
+                    var opt = {
+                        chanid: chanid,
+                        tk: tk,
+                        name: treeNode.name
+                    }
+                    camera.startView(opt);
+                }
+            }
+        });
+        $('button.camera-operate-btn').click(function(){
+            var action = $(this).attr('action');
+            var player = camera.getSelectPlayer();
+            var speed = null;
+            var duration = null;
+            var prepoint = null;
+            if(player!=null){
+                player.ctrlPTZ(action, speed, duration, prepoint);
+                return;
+            }else{
+                console.log('当前无视屏预览');
+                return;
+            }
+        });
+   });
+</script>

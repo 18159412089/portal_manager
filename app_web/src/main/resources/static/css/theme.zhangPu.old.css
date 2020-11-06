@@ -1,0 +1,91 @@
+.home-bg-1{ background-image: url(../images/zhangpu/bg_zhangpu_emergency.jpg);}
+.home-bg-2{ background-image: url(../images/zhangpu/bg_zhangpu_2.jpg);}
+
+.home-air-header-container {background-image: url("../images/water/home_water_header_bg.png");}
+.home-air-header-container .header-logo {color: #6ecc8f;}
+.home-air-header-container .header-other {color: #00f25f;}
+.p-right a {
+    color: #edfbed;
+    border-color:#83d481;
+    background-color: #3f634c;
+    background-color: rgba(126,172,130,0.5);
+}
+.p-right a:after{background-image: url("../images/new-popup/water-left.png");width: 22px;left: -22px;}
+.p-right a:before{background-image: url("../images/new-popup/water-right.png");width: 22px;right: -22px;}
+.home-panel-bg {background-image: url("../images/zhangpu/home_panel_bg.png");border-color: #489065;border-color: rgba(110,204,143,0.64);}
+.home-panel-bg .bg-top-left
+, .home-panel-bg .bg-top-right
+, .home-panel-bg .bg-bottom-left
+, .home-panel-bg .bg-bottom-right{border-color:#a0ffc1; }
+.home-border-panel-bg .bg-center-left-top
+, .home-border-panel-bg .bg-center-left-bottom
+, .home-border-panel-bg .bg-center-right-top
+, .home-border-panel-bg .bg-center-right-bottom {background-image: url(../images/zhangpu/home_panel_border_1.png);}
+.home-border-panel-bg .bg-top-left
+, .home-border-panel-bg .bg-top-right
+, .home-border-panel-bg .bg-bottom-right
+, .home-border-panel-bg .bg-bottom-left {background-image: url(../images/zhangpu/home_panel_border.png);}
+.home-panel-header
+,.personnel-list-container
+,.home-panel .box-btn{color: #a6efc0;}
+.personnel-parent{background-image: url("../images/zhangpu/home_panel_bg.png");}
+.personnel-info.offline-user .personnel-content .function
+,.personnel-info.offline-user .personnel-content .name{color: #fff;}
+/**/
+.searchbox-item .textbox .icon{line-height: 36px;font-size: 22px;text-align: center;}
+.searchbox-item .textbox .icon-shanchu3{font-size: 16px;}
+.home-panel .searchbox-item{border-bottom:1px solid #489065;
+    border-color: rgba(110,204,143,0.64);
+}
+.home-panel .searchbox-item .textbox{margin: 0;background: none;border: none;}
+.home-panel .searchbox-item .textbox-text{background: none;color: #a6efc0;}
+.home-panel .searchbox-item+.personnel-list-container{height: auto;position: absolute;
+    top:36px;bottom: 0;left: 0;right: 0;}
+.home-panel .searchbox-item .textbox .icon{color: #a6efc0;}
+.textbox-focused {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.home-panel .searchbox-item .textbox .textbox-prompt {
+    color: #78b185;
+}
+.home-bg-1 .ol-control button {background-color: rgba(0, 147, 51,.5);}
+.home-bg-1 .ol-control button:focus
+,.home-bg-1 .ol-control button:hover {background-color: rgba(0, 147, 51,.7);}
+
+/*------------------地图页-----------------*/
+.map-panel-header{
+    background-color: #2f8eef;
+    background-color: rgba(47, 142, 239, 0.9);
+}
+.theme-container .theme-title:before {background-color: #2f8eef;}
+.pagination table .l-btn-plain:hover {
+    background: #2f8eef;
+    border-color:#2f8eef;
+}
+/*按钮*/
+.btn-primary{background-color:#2f8eef;color:#fff;border-color: #2f8eef;}
+.btn-primary:hover
+, .btn-primary:focus
+, .btn-primary:active
+, .btn-primary.active
+, .btn-primary.disabled
+, .btn-primary[disabled]{
+    background-color:#3279D3;color:#fff;border-color: #3279D3;
+}
+.btn-primary:focus
+, .btn-primary:active
+, .btn-primary.active{
+    background-color:#3279D3;
+}
+/*------------------------------------------------响应式------------------------------------------------------------*/
+@media (max-width: 1440px) {
+
+}
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 1024px) {
+
+}

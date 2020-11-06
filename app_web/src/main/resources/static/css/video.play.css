@@ -1,0 +1,64 @@
+/*video-play*/
+.video-play-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: #0f0f0f;
+    color:#fff;
+}
+.video-play-box{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 130px;
+
+}
+.video-play-bottom{
+    position: absolute;
+    top: auto;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+.video-play-bottom a{color: #fff;}
+.video-play-bottom a:hover
+,.video-play-bottom a.active{color: #efc002;}
+.video-play-bottom .video-play-info{line-height:36px;padding:0 14px;height:36px;overflow:hidden;}
+.video-play-bottom .icon{line-height:inherit;font-size: inherit;}
+.video-play-bottom .video-play-info .play-info{color:#efc002;}
+.video-play-bottom .video-play-info .play-info .icon{font-size: 18px;vertical-align: middle;}
+.video-play-bottom .video-play-info .play-opt{font-size: 0;}
+.video-play-bottom .video-play-info .play-opt a{display:inline-block;width: 36px;text-align: center;font-size: 24px;}
+.video-play-bottom .video-play-tool{background: #1e1e1f;height: 94px;}
+.video-play-bottom .video-play-tool .play-opt{font-size: 0;}
+.video-play-bottom .video-play-tool .play-opt a{display:inline-block;width: 48px;text-align: center;font-size: 30px;}
+.video-play-bottom .video-play-tool .play-content{font-size: 0;padding-top: 13px;}
+.video-play-bottom .video-play-tool .play-content span{display:inline-block;vertical-align: middle;font-size: 14px;}
+.video-hangup{font-size:36px!important;color:#d30c0f;cursor: pointer;padding: 0px 12px;}
+.video-hangup:hover{color:#9b1713;}
+.video-talkback{cursor: pointer;margin: 0px 12px;}
+.video-state:before{content:"";display: inline-block;width:10px;height: 10px;background: #32ca27;margin:0px 14px;
+    -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%;
+}
+.icon-loudspeaker{display:inline-block;width:68px;height: 68px;background:url(../images/icon_loudspeaker.png) no-repeat;}
+.icon-loudspeaker.active{background-image:url(../images/icon_loudspeaker_active.png);}
+.btn-border{padding: 3px 10px;line-height:1.5;-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;
+    border:1px solid #1286d3;color:#1286d3;background: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

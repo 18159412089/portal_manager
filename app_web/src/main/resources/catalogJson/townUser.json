@@ -1,0 +1,23 @@
+[
+  {
+    "children":[
+      {
+        "num":1,
+        "name":"小流域资料补全人员",
+        "icon":"icon-2012081511767",
+        "remark":"小流域资料补全人员",
+        "id":"ef45e93f-7395-4203-fxy1-3ab53c2b5fe6",
+        "text":"小流域资料补全人员",
+        "state":"",
+        "parentId":"345664ba-837d-fxy0-8a1f-98c9d90d09d3",
+        "url":"/enviromonit/waterData/userList"
+      }
+    ],
+    "name":"资料补全人员",
+    "id":"0",
+    "text":"资料补全人员",
+    "state":"",
+    "url":"#",
+    "parentId":""
+  }
+]

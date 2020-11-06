@@ -1,0 +1,34 @@
+[
+  {
+    "children":[
+      {
+        "num":1,
+        "name":"近岸海域点位信息",
+        "icon":"icon-2012081511767",
+        "remark":"近岸海域点位信息",
+        "id":"8511a160-e9a7-4617-9104-4c696eb6a8aa",
+        "text":"近岸海域点位信息",
+        "state":"",
+        "parentId":"e3cbd64a-2ad2-4bdd-9c98-61fc032291e0",
+        "url":"/area/siteInfo"
+      },
+      {
+        "num":2,
+        "name":"近岸海域监测数据",
+        "icon":"icon-2012081511767",
+        "remark":"近岸海域监测数据",
+        "id":"36716b3e-c0fb-4cc7-9ba2-64e8741d2e94",
+        "text":"近岸海域监测数据",
+        "state":"",
+        "parentId":"e3cbd64a-2ad2-4bdd-9c98-61fc032291e0",
+        "url":"/area/siteMonitorData"
+      }
+    ],
+    "name":"近岸海域",
+    "id":"0",
+    "text":"近岸海域",
+    "state":"",
+    "url":"#",
+    "parentId":""
+  }
+]

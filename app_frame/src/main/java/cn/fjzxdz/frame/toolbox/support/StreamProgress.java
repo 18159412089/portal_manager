@@ -1,0 +1,23 @@
+package cn.fjzxdz.frame.toolbox.support;
+
+/**
+ * @author StreamProgresslooly
+ */
+public class StreamProgress {
+
+    public void start() {
+        // 预留
+
+    }
+
+    public void progress(long size) {
+        // 预留
+
+    }
+
+    public void finish() {
+        // 预留
+
+    }
+
+}

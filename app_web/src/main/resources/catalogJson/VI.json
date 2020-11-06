@@ -1,0 +1,34 @@
+[
+  {
+    "children":[
+      {
+        "num":1,
+        "name":"信访投诉",
+        "icon":"icon-2012081511767",
+        "remark":"信访投诉",
+        "id":"60f6e93f-7395-4203-sw66-3ab53c2b5fe6",
+        "text":"信访投诉",
+        "state":"",
+        "parentId":"c2e364ba-837d-5g21-8a1f-98c9d90d09d3",
+        "url":"/vi/visits"
+      },
+      {
+        "num":1,
+        "name":"信访投诉统计分析",
+        "icon":"icon-2012081511767",
+        "remark":"信访投诉统计分析",
+        "id":"60f6e93f-7395-4203-sw98-3ab53c2b5fe6",
+        "text":"信访投诉统计分析",
+        "state":"",
+        "parentId":"c2e364ba-837d-5g21-8a1f-98c9d90d09d3",
+        "url":"/vi/visits/analysis"
+      }
+    ],
+    "name":"信访投诉",
+    "id":"0",
+    "text":"信访投诉",
+    "state":"",
+    "url":"#",
+    "parentId":""
+  }
+]

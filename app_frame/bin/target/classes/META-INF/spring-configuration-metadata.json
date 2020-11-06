@@ -1,0 +1,78 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "cn.fjzxdz.frame.config.AmsProperties",
+      "name": "ams",
+      "type": "cn.fjzxdz.frame.config.AmsProperties"
+    },
+    {
+      "sourceType": "cn.fjzxdz.frame.config.MainDatasourceProperties",
+      "name": "main.datasource",
+      "type": "cn.fjzxdz.frame.config.MainDatasourceProperties"
+    },
+    {
+      "sourceType": "cn.fjzxdz.frame.config.RTCProperties",
+      "name": "rtc",
+      "type": "cn.fjzxdz.frame.config.RTCProperties"
+    },
+    {
+      "sourceType": "cn.fjzxdz.frame.config.SecondDatasourceProperties",
+      "name": "second.datasource",
+      "type": "cn.fjzxdz.frame.config.SecondDatasourceProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "cn.fjzxdz.frame.config.AmsProperties",
+      "defaultValue": false,
+      "name": "ams.kaptcha-open",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "cn.fjzxdz.frame.config.MainDatasourceProperties",
+      "name": "main.datasource.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "cn.fjzxdz.frame.config.MainDatasourceProperties",
+      "name": "main.datasource.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "cn.fjzxdz.frame.config.MainDatasourceProperties",
+      "name": "main.datasource.user",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "cn.fjzxdz.frame.config.RTCProperties",
+      "name": "rtc.appid",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "cn.fjzxdz.frame.config.RTCProperties",
+      "name": "rtc.uid",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "cn.fjzxdz.frame.config.RTCProperties",
+      "name": "rtc.zp-uid",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "cn.fjzxdz.frame.config.SecondDatasourceProperties",
+      "name": "second.datasource.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "cn.fjzxdz.frame.config.SecondDatasourceProperties",
+      "name": "second.datasource.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "cn.fjzxdz.frame.config.SecondDatasourceProperties",
+      "name": "second.datasource.user",
+      "type": "java.lang.String"
+    }
+  ]
+}

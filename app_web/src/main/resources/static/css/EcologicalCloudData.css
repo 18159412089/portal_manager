@@ -1,0 +1,693 @@
+/*--------------------------------------------实时动态数据------------------------------------------------*/
+#home-left{width: 25%;}
+
+
+#home-right{width: 50%;}
+#monitoringDetails{width: auto;}
+#monitoringDetails .grid-info {
+    width: 25%;
+    float: left;
+}
+.grid-info .panel-right > div span {font-size: 38px;}
+#todayWeather .box-body{width: 25%;height:100%;float: left;margin-left:2%;}
+#todayWeather .box-body:first-child{width: 46%;margin-left:0%;}
+#todayWeather .box-body:first-child .weather-info-list{padding: 0 20px;text-align: left;margin-top: 124px;}
+#todayWeather .box-body:first-child .weather-mian{font-size:28px;margin: 20px 0;}
+#todayWeather .box-body:first-child .sub-title{color:#98b2da;}
+#todayWeather .weather-mian{margin: 20px 0;}
+#todayWeather .sub-title {
+    padding: 10px 20px;
+}
+#waterMonitoring .home-air-panel-body
+,#provinceRanking .home-air-panel-body{height:450px;}
+
+#videoSurveillance .video-box
+,#todayWeather .home-air-panel-body
+,#countyRanking .home-air-panel-body{height:400px;}
+
+#monitoringDetails .data-table-box{margin-top:15px;;height: 365px;}
+
+#videoSurveillance .video-box:first-child{width:49%;margin-right: 1%;float: left;}
+#videoSurveillance .video-box{overflow: hidden;background: #ff0000;}
+
+.home-ranking-list{width: 100%;height: 100%;position: relative;}
+.home-ranking-list .panel-body{background:rgba(0,216,255,0.1);}
+.home-ranking-list .datagrid-htable
+,.home-ranking-list .datagrid-btable
+,.home-ranking-list .datagrid-ftable {
+    color: #fff;
+}
+.home-ranking-list .datagrid .datagrid-wrap.panel-body
+,.home-ranking-list .datagrid .datagrid-wrap .datagrid-view
+,.home-ranking-list .datagrid .datagrid-wrap .datagrid-view div[class^="datagrid-view"]
+,.home-ranking-list .datagrid-header
+,.home-ranking-list .datagrid-header td
+,.home-ranking-list .datagrid-body td
+,.home-ranking-list .datagrid-footer td {border: none!important;}
+.home-ranking-list .datagrid-header .datagrid-cell span
+,.home-ranking-list .datagrid-cell {font-size: 14px;}
+.home-ranking-list .datagrid-header
+,.home-ranking-list .datagrid-td-rownumber
+,.home-ranking-list .panel-header {
+    background: rgba(0,216,255,0.1);
+}
+.home-ranking-list .datagrid-row-over
+,.home-ranking-list .datagrid-header td.datagrid-header-over {
+	background: rgba(0,216,255,0.1);
+	color: inherit;
+}
+.home-ranking-list .datagrid-row-selected {
+    background: rgba(0,216,255,0.1)!important;
+    color: #fff !important;
+}
+.home-ranking-list .ranking{
+    display: inline-block;
+    background: #65b149;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.weather-mian{text-align: center;}
+.weather-mian .em{font-size: 62px;}
+.weather-mian .icon{font-size: 84px;color: #0088ff;}
+.weather-info-list{padding: 0 8px;text-align: center;}
+.weather-info-list .item{padding: 8px 0;}
+.weather-info-list .icon{color:#98b2da;font-size: 22px;}
+.weather-temperature{text-align: center;font-size: 38px;}
+.TV-screen-container  .home-ranking-list .datagrid-cell{ font-size: 17px; }
+.TV-screen-container .home-ranking-list .datagrid-header .datagrid-cell span{font-size: 16px;}
+@media (max-width: 1800px) {
+    #home-right {width:65%;}
+    #home-left {width: 35%;}
+    #home-center .home-air-panel:first-child{width: 48%;float: left;}
+    #home-center .home-air-panel{overflow: hidden;}
+    #countyRanking .home-air-panel-body{height:450px;}
+}
+
+@media (max-width: 1024px){
+    .grid-info .panel-right > div span {
+        font-size: 20px;}
+    #home-left{
+        width: 100%;
+    }
+    #home-right{
+        width: 100%;
+    }
+}
+
+
+
+/*--------------------------------------------污染源实时动态数据 2019/10/30------------------------------------------------*/
+/*头部*/
+.real-body{
+   background-color: #133662;
+}
+.pollution-real-body  a{
+    cursor: pointer;
+}
+.pollution-real-body{
+    width: 100%;
+    background: #ededed;
+    color: #fff;
+    background: url(../images/new-img/real-body.png)  ;
+    background-size: 100% ;
+}
+.pollution-real-body .home-real-head{
+    position: relative;
+   width: 100%;
+   height: 83px;
+  /*background: url("../images/new-img/real-head.png")no-repeat center;*/
+}
+.pollution-real-body .home-real-head .real-head-left{
+    position: absolute;
+    left: 0;
+    width: 23%;
+    height: 86px;
+    background: url("../images/new-img/real-head-left.png")no-repeat 100%;
+}
+.pollution-real-body .home-real-head .real-head-left span{
+    display: inline-block;
+    width: 100%;
+    line-height: 24px;
+    font-size: 14px;
+    padding: 10px 76px 22px 10px;
+    font-weight: 400;
+    text-align: left;
+    color: rgba(39,199,254,1);
+}
+.pollution-real-body .home-real-head .real-head-left span i{
+    vertical-align: sub;
+}
+.pollution-real-body .home-real-head .real-head-title{
+    position: absolute;
+    padding: 0 69px;
+    left: 50%;
+    width: 52%;
+    height: 82px;
+    margin-left: -26%;
+    box-sizing: border-box;
+    background-color: #3384d1;
+    box-shadow: #3689d8 0px 0px 30px 5px inset;
+    border-bottom: 1px solid #47c5f4;
+}
+.real-head-title:before{
+    position: absolute;
+    content: "";
+    width: 69px;
+    height: 83px;
+    left: -69px;
+    top: -1px;
+    background: url("../images/new-img/horn1.png");
+}
+.real-head-title:after{
+    position: absolute;
+    content: "";
+    width: 63px;
+    height: 83px;
+    right: -63px;
+    top: 0;
+    background: url("../images/new-img/horn2.png");
+}
+.real-head-title span{
+    display: inline-block;
+    width: 100%;
+    line-height:74px;
+    font-size:36px;
+    font-family:Microsoft YaHei;
+    font-weight:bold;
+    text-align: center;
+    color:rgba(255,255,255,1);
+}
+
+.real-head-right{
+    float: right;
+    width: 23%;
+    height: 85px;
+    text-align: left;
+    background: url("../images/new-img/real-head-right.png")no-repeat 0%;
+}
+.real-head-right .real-but{
+    display: inline-block;
+    width: 131px;
+    height: 47px;
+    font-size:18px;
+    margin-left: 68px;
+    text-align: center;
+    font-family:Microsoft YaHei;
+    font-weight:400;
+    color:rgba(176,231,252,1);
+    margin-top: 15px;
+    line-height: 46px;
+    background: url("../images/new-img/real-but.png")no-repeat;
+    cursor: pointer;
+}
+
+/*----------内容--------*/
+.real-data-title{
+   width: 100%;
+   text-align: center;
+    margin-bottom: 15px;
+}
+.real-data-title span{
+    display: inline-block;
+    width: 214px;
+    height: 31px;
+    font-size:18px;
+    font-weight:400;
+    color:rgba(176,231,252,1);
+    background: url("../images/new-img/title-font.png");
+}
+.real-content{
+    width: 100%;
+    padding: 60px 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+.real-content .real-data-info{
+    position: relative;
+    width:20%;
+    height:740px;
+    background:rgba(20, 98, 164, 0.36);
+}
+.real-content .real-data-info .left-top-border{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.real-content .real-data-info .right-top-border{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.real-content .real-data-info .left-bottom-border{
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+.real-content .real-data-info .right-bottom-border{
+    position: absolute;
+    right: 0;
+    bottom: -4px;
+}
+.real-data-center{
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    margin-left: -25%;
+}
+.real-data-center .circular-data-box{
+    width: 100%;
+}
+/*----------圆-------*/
+.real-data-center .circular-data-box .circular-row{
+   width: 100%;
+    float: left;
+}
+
+.real-data-center .circular-data-box .circular-row .circular-item{
+    position: relative;
+    width: 370px;
+    padding: 22px 0 27px  0;
+}
+
+.real-data-center .circular-data-box .circular-row .copies-two:nth-child(2n+0){
+    float: right;
+}
+.circular-data-box .circular-row .circular-item .entry-name{
+    position: relative;
+    margin: 0 auto;
+}
+.circular-data-box .circular-row .circular-item .tex{
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    margin-left: -40%;
+    top: 22%;
+}
+
+.circular-data-box .circular-row .circular-item .entry-name span{
+    display: inline-block;
+    width: 100%;
+    font-size:33px;
+    text-align: center;
+}
+.circular-data-box .circular-row .circular-item .entry-name p{
+    font-size:17px;
+    font-family:Microsoft YaHei;
+    font-weight:bold;
+    line-height: 40px;
+    text-align: center;
+}
+
+ .circular-row .circular-item .entry-name1{
+    width: 187px;
+    height: 186px;
+     color: #03FFEE;
+    background: url("../images/new-img/circular-img1.png") no-repeat;
+}
+.circular-row .circular-item .entry-name1 >a{
+    color: #03FFEE;
+}
+.circular-row .circular-item .entry-name2{
+   width: 187px;
+    height: 187px;
+    color: #45E1FF ;
+    background: url("../images/new-img/circular-img2.png") no-repeat;
+}
+.circular-row .circular-item .entry-name2 >a{
+    color: #45E1FF ;
+}
+.circular-row .circular-item .entry-name3{
+    width: 187px;
+    height: 187px;
+    color: #24C5FD;
+    background: url("../images/new-img/circular-img3.png") no-repeat;
+}
+.circular-row .circular-item .entry-name3 >a{
+    color: #24C5FD;
+}
+.circular-row .circular-item .entry-name4{
+    width: 187px;
+    height: 187px;
+    color: #CEC5FE;
+    background: url("../images/new-img/circular-img4.png") no-repeat;
+}
+.circular-row .circular-item .entry-name4 >a{
+    color: #CEC5FE;
+}
+.circular-row .circular-item .entry-name5{
+    width: 187px;
+    height: 187px;
+    color: #F4D34A;
+    background: url("../images/new-img/circular-img5.png") no-repeat;
+}
+.circular-row .circular-item .entry-name5 >a{
+    color: #F4D34A;
+}
+.circular-data-box .circular-row .circular-item .ellipse1{
+    width: 186px;
+    height: 72px;
+    background: url("../images/new-img/ellipse-img1.png");
+}
+.circular-data-box .circular-row .circular-item .ellipse2{
+    width: 186px;
+    height: 72px;
+    background: url("../images/new-img/ellipse-img2.png");
+}
+.circular-data-box .circular-row .circular-item .ellipse3{
+    width: 186px;
+    height: 72px;
+    background: url("../images/new-img/ellipse-img3.png");
+}
+.circular-data-box .circular-row .circular-item .ellipse4{
+    width: 186px;
+    height: 72px;
+    background: url("../images/new-img/ellipse-img4.png");
+}
+.circular-data-box .circular-row .circular-item .ellipse5{
+    width: 186px;
+    height: 72px;
+    background: url("../images/new-img/ellipse-img5.png");
+}
+.circular-data-box .circular-row .circular-item .ellipse-tag span{
+    display: inline-block;
+    line-height: 70px;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+.circular-data-box .circular-row .circular-item .ellipse-tag{
+    position: absolute;
+    bottom: -2px;
+    left: -4px;
+}
+.circular-data-box .circular-row .circular-item .ellipse-tag:nth-child(2){
+    bottom: -2px;
+    left: auto;
+    right: -4px;
+}
+.circular-data-box .circular-row .circular-item .upward-left-tag{
+    bottom: auto;
+    top: -5px;
+
+}
+.circular-data-box .circular-row .circular-item .upward-right-tag{
+    bottom: auto;
+    top: -5px;
+    left: auto;
+    right: -4px;
+}
+.circular-data-box .circular-row .circular-item .alont-tag{
+    left: 50% !important;
+    margin-left: -92px !important;
+    bottom: 12px !important;
+}
+
+.pollution-real-body .datagrid .datagrid-wrap .datagrid-view{
+     border: 1px solid transparent;
+}
+.pollution-real-body .home-air-panel .data-table-box{
+    height: 675px !important;
+}
+.pollution-real-body  .home-ranking-list .ranking{
+    background: #255b92 !important;
+}
+/* 滚动条样式 */
+
+::-webkit-scrollbar {
+    width: 4px;
+    background-color:transparent;
+}
+::-webkit-scrollbar-thumb {
+    height: 20px;
+    background-color: transparent!important;
+    -webkit-border-radius: 6px;
+    outline: 2px solid #fff;
+    outline-offset: -2px;
+    border: 2px solid transparent!important;
+    filter: alpha(opacity = 50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+}
+::-webkit-scrollbar-thumb {
+    background-color:transparent;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-track-piece {
+    background: rgba(0,0,0,0)!important;
+    -webkit-border-radius: 0;
+}
+/*--------------------------------------------污染源实时动态数据 结束 ------------------------------------------------*/
+
+/*--------------------------------------------污染源实时动态数据 2019/11/13 详情页------------------------------------------------*/
+.info-real-body{
+    font-family: SimHei;
+    background: url(../images/new-img/info-real-back1.png)no-repeat center;
+    background-size: 100%;
+    background-color: #153d69;
+    background-position: bottom;
+}
+.info-real-content{
+    width: 100%;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.entry-type-list{
+    display: inline-block;
+    width: 100%;
+}
+.entry-type-list .entry-type-item{
+    position: relative;
+    width: 15%;
+    float: left;
+    margin-right: 2%;
+    height: 110px;
+    padding: 8px 15px;
+    border: 2px solid #54b3d3;
+    border-radius: 7px;
+    box-shadow: 0px 0px 2px 2px #133662c4 inset;
+    /* background-color: #1b4f88c2; */
+    background-image: linear-gradient(rgba(19, 54, 98, 0.7), rgba(62, 132, 214, 0.56), rgba(19, 54, 98, 0.7));
+    box-sizing: border-box;
+}
+.entry-type-list .entry-type-item:last-child{
+    margin-right: 0;
+}
+.entry-type-list .entry-type-item .name{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 36px;
+    color: #1eebf7;
+}
+.entry-type-list .entry-type-item p{
+    text-align: right;
+    color: #1eebf7;
+    line-height: 50px;
+}
+.entry-type-list .entry-type-item p span{
+    font-size: 38px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+    vertical-align: middle;
+}
+.entry-type-list .entry-type-item .left-top-border{
+    position: absolute;
+    left: 1%;
+    top: -7px;
+}
+.entry-type-list .entry-type-item .right-top-border{
+    position: absolute;
+    right: 1%;
+    top: -8px;
+}
+
+.entry-type-list .entry-type-item .left-bottom-border{
+    position: absolute;
+    left: 1%;
+    bottom: -2px;
+}
+
+.entry-type-list .entry-type-item .right-bottom-border{
+    position: absolute;
+    right: 1%;
+    bottom: -2px;
+}
+.info-real-content .th-style1{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.info-real-content .table-head{
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: rgba(63, 94, 130, 0.85);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.info-real-content .table-head span{
+    display: inline-block;
+    float: left;
+    line-height: 40px;
+    width: 50%;
+    text-align: center;
+}
+.info-real-content .data-table-box{
+    float: left;
+    width: 100%;
+    height: 620px;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    overflow: hidden;
+}
+
+.info-real-content .data-table-box .see-tag{
+    display: inline-block;
+    width: 80px;
+    color: white;
+    text-align: center;
+    line-height: 26px;
+    background-color: #14a7b0;
+    border-radius: 5px;
+
+}
+
+.info-real-content .textbox{    border: 1px solid transparent;    background-color: #455e82; }
+.info-real-content .textbox .textbox-prompt{background: #455e82;color: #98a3b2;}
+.info-real-content .home-ranking-list .datagrid-header, .home-ranking-list .datagrid-td-rownumber, .home-ranking-list .panel-header{
+    background: rgba(69, 94, 130, 0.74);
+}
+.info-real-content .datagrid .datagrid-wrap .datagrid-pager{
+    border:none;
+}
+.info-real-content .pagination {
+    background: rgba(17, 70, 114, 0.1);
+}
+.info-real-content  .pagination-info{
+    /*display: none;*/
+}
+.info-real-content .datagrid .datagrid-pager.pagination table{
+    float: none;
+    margin: 0 auto;
+}
+.info-real-content  .pagination td{
+    color: white;
+}
+.pollution-info-body .panel-group-container > .panel-group-top{
+    color: #ffffff !important;
+    border: none;
+}
+.pollution-info-body .panel-tex-part .panel-tex-head{
+    color: white;
+}
+.pollution-info-body.panel-tex-part .panel-tex-head .link-tag{
+    display: inline-block;
+    font-size: 12px;
+    color: white;
+    padding: 2px 10px;
+    background-color: #f3a62c;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.pollution-info-body .panel-tex-part .row-item .copies .name-tag{
+    color: #1ee7f3;
+}
+.pollution-info-body .panel-tex-part .row-item .copies .font-tag{
+    color: white;
+}
+.pollution-info-body .panel-tex-part .existence-bug-box >span{
+    color: white;
+    background-color: #8d6c8d
+}
+.pollution-info-body .panel-tex-part .panel-tex-head:before{
+    background-color: transparent;
+}
+.pollution-info-body .panel-tex-part .row span{
+    color: white;
+}
+.pollution-info-body .speed-info-title{
+    color:#1ee7f3 ;
+}
+.pollution-info-bodyp .speed-info-part .highlight .time-axis-box .step{
+    color:#1ee7f3 ;
+}
+.pollution-info-body .speed-info-part .time-axis-box .tex{
+    color: white;
+}
+.pollution-info-body .speed-info-part .time-axis-container .item.highlight:before{
+    border-color: #3aa1d9;
+    border-left: 1px solid #1eb4e5;
+}
+.pollution-info-body .speed-info-part .time-axis-container .item.highlight:after{
+    border: 1px solid #3aa1d9;
+}
+.pollution-info-body .time-axis-part{
+    color: white;
+}
+.pollution-info-body .panel-tex-part .existence-bug-box i{
+    color: #fe7c85;
+}
+.info-real-body .easyui-dialog .textbox-label{color: white !important;}
+
+
+.real-panel-group .tabs-header, .tabs-scroller-left, .tabs-scroller-right, .tabs-tool, .tabs,
+.tabs-panels, .tabs li a.tabs-inner, .tabs li.tabs-selected a.tabs-inner,
+.tabs-header-bottom .tabs li.tabs-selected a.tabs-inner, .tabs-header-left
+.tabs li.tabs-selected a.tabs-inner, .tabs-header-right
+.tabs li.tabs-selected a.tabs-inner{
+    border-color: #3aa1d9 !important;
+}
+
+@media (max-width: 1520px){
+    .real-content{
+        padding: 30px;
+    }
+    .real-data-center{
+        width: 56%;
+        margin-left: -28%;
+    }
+    /*.real-data-center{*/
+    /*    width: 70%;*/
+    /*    margin-left: -35%;*/
+    /*}*/
+    /*.real-content .real-data-info{*/
+    /*    width: 80%;*/
+    /*    margin: 0 10%;*/
+    /*    height: 400px;*/
+    /*}*/
+
+
+}
+@media (max-width: 1380px){
+    .real-content{
+        padding: 30px 1% 780px 1%;
+    }
+    .real-data-center{
+        width: 88%;
+        margin-left: -44%;
+        height: 740px;
+        top: 498px;
+    }
+    .real-content .real-data-info{
+        width: 49%;
+        height: 360px;
+        margin: auto auto 35px auto;
+    }
+    .pollution-real-body .home-air-panel .data-table-box{
+        height: 300px !important;
+    }
+
+}

@@ -1,0 +1,44 @@
+/*头部导航*/
+#pf-hd {background-color:#2f8eef;}
+/*------------------地图页-----------------*/
+.map-panel-header{
+    background-color: #2f8eef;
+    background-color: rgba(47, 142, 239, 0.9);
+}
+.map-panel-subtext{background-color:#2f8eef;}
+.theme-container .theme-title:before {background-color: #2f8eef;}
+.pagination table .l-btn-plain:hover {
+    background: #2f8eef;
+    border-color:#2f8eef;
+}
+.tabs-panel .tabs-item .tabs-inner.active{background-color: #2f8eef;}
+.filter-container .filter-box .filter-title:before {background-color: #2f8eef;}
+.filter-container .filter-box .filter-content .no-choice.choiced {
+    border-color: #2f8eef;
+    color: #2f8eef;
+}
+/*按钮*/
+.btn-primary{background-color:#2f8eef;color:#fff;border-color: #2f8eef;}
+.btn-primary:hover
+, .btn-primary:focus
+, .btn-primary:active
+, .btn-primary.active
+, .btn-primary.disabled
+, .btn-primary[disabled]{
+    background-color:#3279D3;color:#fff;border-color: #3279D3;
+}
+.btn-primary:focus
+, .btn-primary:active
+, .btn-primary.active{
+    background-color:#3279D3;
+}
+/*------------------------------------------------响应式------------------------------------------------------------*/
+@media (max-width: 1440px) {
+
+}
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 1024px) {
+
+}

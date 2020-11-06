@@ -1,0 +1,98 @@
+/* img{width:100%;height:auto;} */
+body{color:#fff;}
+.home-panel{background: none;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;padding: 0px 20px 0 16px;}
+.home-panel-header {padding:30px 0px 6px 0px;color:#58abe0;}
+.home-panel-header .title .icon{color:inherit;}
+.home-panel-header .more{color:inherit;}
+.home-panel-body {height: 270px;}
+.home-panel-bg{position: absolute;top:0;bottom:0;left:0;right:0;}
+.home-panel-bg .bg-top-left{position: absolute;top:0;left:0;
+	width:40px;height:76px;
+	background: url(../images/border_top_left.png);
+}
+.home-panel-bg .bg-top-center{position: absolute;top:0;left:40px;right:290px;
+	width:auto;height:76px;
+	background: url(../images/border_top_center.png);
+}
+.home-panel-bg .bg-top-right{position: absolute;top:0;left:auto;right:0;
+	width:290px;height:76px;
+	background: url(../images/border_top_right.png);
+}
+.home-panel-bg .bg-left-center{position: absolute;top:76px;left:0;right:auto;bottom:55px;
+	width:14px;height:auto;
+	background: url(../images/border_left_center.png);
+}
+.home-panel-bg .bg-center-center{position: absolute;top:76px;left:14px;right:35px;bottom:55px;
+	width:auto;height:auto;
+	background: url(../images/border_center_center.png);
+}
+.home-panel-bg .bg-right-center{position: absolute;top:76px;left:auto;right:0;bottom:234px;
+	width:35px;height:auto;
+	background: url(../images/border_right_center.png);
+}
+.home-panel-bg .bg-right-bottom{position: absolute;top:auto;left:auto;right:0;bottom:0px;
+	width:35px;height:234px;
+	background: url(../images/border_right_bottom.png);
+}
+.home-panel-bg .bg-bottom-right{position: absolute;top:auto;left:auto;right:35px;bottom:0px;
+	width:196px;height:55px;
+	background: url(../images/border_bottom_right.png);
+}
+.home-panel-bg .bg-bottom-center{position: absolute;top:auto;left:40px;right:231px;bottom:0px;
+	width:auto;height:55px;
+	background: url(../images/border_bottom_center.png);
+}
+.home-panel-bg .bg-bottom-left{position: absolute;top:auto;left:0;right:auto;bottom:0px;
+	width:40px;height:55px;
+	background: url(../images/border_bottom_left.png);
+}
+
+.data-group-container .data-group {width: 33%;margin-top: 28px;}
+.data-group .group-data {color:#fff;}
+.data-group .group-title{background-color: #84baef;background-color:rgba(132,186,239,0.2);}
+.total-data-container{background-color:#10719b;background-color: rgba(7,241,255,0.3);padding:16px 22px;font-size: 0;}
+.total-data-container .title
+,.total-data-container .num
+,.total-data-container .percent{display: inline-block;vertical-align:middle;}
+.total-data-container .title{color:#4fd9fc;font-size:26px;margin-right: 8px;}
+.total-data-container > .num span{display: inline-block;font-size:54px;line-height:1;text-align:center;font-weight:bold;
+background-color:#0d4b87;background-color: rgba(0,16,92,0.4);margin:0 4px;width:36px;}
+.total-data-container > .num .symbol
+,.task-data .num .symbol{width:auto;background:none;margin:0;border:none;}
+.total-data-container .percent{font-size:14px;color:#4fd9fc;text-align:left;margin-left: 20px;}
+.total-data-container .percent .num{font-size: 20px;line-height:1;}
+.total-data-container .percent .num span{font-size: 32px;font-weight: bold;}
+.task-data-container{position:relative;padding-bottom: 42px;}
+.task-data-container:before{content: "";display: block;height: 88px;background: url('../images/home_bottom_bg.png') no-repeat center;
+	position: absolute;top: 54px;left:0;right: 0;
+}
+.task-data-container:after{content: "";display: block;clear: both;}
+.task-data-container .task-data{width:50%;text-align:center;float: left;margin-top: 10px;}
+.task-data .title{display: inline-block;vertical-align:middle;font-size: 12px;width: 80px;text-align:right;color:#4fd9fc;}
+.task-data .num{display: inline-block;vertical-align:middle;}
+.task-data .num span{display: inline-block;font-size: 32px;font-weight:bold;border:1px solid #4fd9fc;border-color: rgba(7,241,255,0.3);margin:0 1px;width:28px;line-height:38px;}
+
+#pf-hd{
+	background:rgba(0,0,0,0.3);
+}
+#pf-hd .pf-logo{border-color:#232852;border-color:rgba(0,0,0,0.3);}
+#AirQualityData {
+    width: 620px;
+}
+#WaterQualityPie {
+    width: 540px;
+}
+#homeMapData{text-align: center;}
+#homeMapData .total-data-container{display: inline-block;}
+
+/*------------------------------------------------------œÏ”¶ Ω----------------------------------------------------------*/
+@media screen and (max-width: 1440px) {
+  #homeMapData{clear: both;}
+  #AirQualityData,#WaterQualityPie{width: 50%;}
+}
+
+.map-panel-body .datagrid-row-selected {
+    background:rgba(242,240,204,0.3)!important;
+}
+
+
